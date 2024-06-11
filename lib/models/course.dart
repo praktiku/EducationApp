@@ -28,7 +28,6 @@ class Course {
   static List<Course> filteredCoursesByCourseId(List<int> ids) {
     List<Course> filteredList =
         courses.where((course) => ids.contains(course.courseId)).toList();
-    filteredList.sort((a, b) => b.courseId.compareTo(a.courseId));
     return filteredList;
   }
 }

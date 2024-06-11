@@ -9,26 +9,29 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            buildHeader(),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: buildUserInfo(),
-            ),
-            const Divider(),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: buildStatsRow(),
-            ),
-            const Divider(),
-            buildProfileBadge('Finished Courses'),
-            const Divider(),
-            buildImageGrid(),
-          ],
+    return Container(
+      padding: const EdgeInsets.only(top: 24),
+      child: Scaffold(
+        body: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              buildHeader(),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: buildUserInfo(),
+              ),
+              const Divider(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: buildStatsRow(),
+              ),
+              const Divider(),
+              buildProfileBadge('Finished Courses'),
+              const Divider(),
+              buildImageGrid(),
+            ],
+          ),
         ),
       ),
     );

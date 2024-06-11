@@ -10,33 +10,36 @@ class BookmarkScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Bookmark',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+    return Container(
+      padding: const EdgeInsets.only(top: 24),
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Bookmark',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            const SizedBox(height: 8),
-            const Text(
-              'Access bookmarked and recent courses easily.',
-              style: TextStyle(
-                color: Colors.grey,
+              const SizedBox(height: 8),
+              const Text(
+                'Access bookmarked and recent courses easily.',
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            buildSwipeableCard('Bookmarked Courses',
-                Course.filteredCoursesByCourseId(user.enrolledCourseId)),
-            const SizedBox(height: 16),
-            buildSwipeableCard('Recent Courses',
-                Course.filteredCoursesByCourseId(user.recentCourseId)),
-          ],
+              const SizedBox(height: 16),
+              buildSwipeableCard('Bookmarked Courses',
+                  Course.filteredCoursesByCourseId(user.enrolledCourseId)),
+              const SizedBox(height: 16),
+              buildSwipeableCard('Recent Courses',
+                  Course.filteredCoursesByCourseId(user.recentCourseId)),
+            ],
+          ),
         ),
       ),
     );

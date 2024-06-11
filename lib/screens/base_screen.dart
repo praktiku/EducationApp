@@ -16,11 +16,11 @@ class BaseScreen extends StatefulWidget {
 class _BaseScreenState extends State<BaseScreen> {
   int _selectedIndex = 0;
 
-  static List<Widget> _widgetOptions = <Widget>[
-    FeaturedScreen(),
-    CategoriesScreen(),
-    BookmarkScreen(),
-    ProfileScreen(),
+  static final List<Widget> _widgetOptions = <Widget>[
+    const FeaturedScreen(),
+    const CategoriesScreen(),
+    const BookmarkScreen(),
+    const ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {

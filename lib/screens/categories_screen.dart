@@ -55,53 +55,56 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Category',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+    return Container(
+      padding: const EdgeInsets.only(top: 24),
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Category',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            const SizedBox(height: 8),
-            const Text(
-              'Browse all classes with certain category',
-              style: TextStyle(
-                color: Colors.grey,
+              const SizedBox(height: 8),
+              const Text(
+                'Browse all classes with certain category',
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
               ),
-            ),
-            const SizedBox(height: 8),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                children: [
-                  const Icon(Icons.search),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: TextField(
-                      controller: _searchController,
-                      decoration: const InputDecoration(
-                        hintText: 'Search category',
+              const SizedBox(height: 8),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  children: [
+                    const Icon(Icons.search),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: TextField(
+                        controller: _searchController,
+                        decoration: const InputDecoration(
+                          hintText: 'Search category',
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            // const SizedBox(height: 16),
-            Expanded(
-                child: ListView.builder(
-                    itemCount: filteredCategories.length,
-                    itemBuilder: (_, index) {
-                      return CategoryListCard(
-                          course: filteredCategories[index]);
-                    })),
-          ],
+              // const SizedBox(height: 16),
+              Expanded(
+                  child: ListView.builder(
+                      itemCount: filteredCategories.length,
+                      itemBuilder: (_, index) {
+                        return CategoryListCard(
+                            course: filteredCategories[index]);
+                      })),
+            ],
+          ),
         ),
       ),
     );
