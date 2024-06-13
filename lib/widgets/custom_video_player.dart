@@ -1,5 +1,5 @@
-import 'package:education_app/constants/color.dart';
-import 'package:education_app/constants/icons.dart';
+import 'package:ulearn/constants/color.dart';
+import 'package:ulearn/constants/icons.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 

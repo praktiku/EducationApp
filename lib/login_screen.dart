@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:education_app/models/user.dart';
-import 'package:education_app/utils/encrypt.dart';
-import 'package:education_app/screens/base_screen.dart'; // Import the base screen or any other screen you want to navigate to after login
+import 'package:ulearn/models/user.dart';
+import 'package:ulearn/utils/encrypt.dart';
+import 'package:ulearn/screens/base_screen.dart'; // Import the base screen or any other screen you want to navigate to after login
 
 class LoginScreen extends StatelessWidget {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();

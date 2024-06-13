@@ -1,9 +1,9 @@
-import 'package:education_app/constants/color.dart';
-import 'package:education_app/constants/size.dart';
-import 'package:education_app/screens/featuerd_screen.dart';
-import 'package:education_app/screens/categories_screen.dart';
-import 'package:education_app/screens/bookmark_screen.dart';
-import 'package:education_app/screens/profile_screen.dart';
+import 'package:ulearn/constants/color.dart';
+import 'package:ulearn/constants/size.dart';
+import 'package:ulearn/screens/featuerd_screen.dart';
+import 'package:ulearn/screens/categories_screen.dart';
+import 'package:ulearn/screens/bookmark_screen.dart';
+import 'package:ulearn/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class BaseScreen extends StatefulWidget {

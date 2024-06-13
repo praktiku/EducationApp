@@ -1,9 +1,9 @@
-import 'package:education_app/constants/color.dart';
-import 'package:education_app/constants/size.dart';
-import 'package:education_app/models/category.dart';
-import 'package:education_app/models/course.dart';
-import 'package:education_app/screens/course_screen.dart';
-import 'package:education_app/widgets/circle_button.dart';
+import 'package:ulearn/constants/color.dart';
+import 'package:ulearn/constants/size.dart';
+import 'package:ulearn/models/category.dart';
+import 'package:ulearn/models/course.dart';
+import 'package:ulearn/screens/course_screen.dart';
+import 'package:ulearn/widgets/circle_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

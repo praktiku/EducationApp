@@ -1,4 +1,4 @@
-import 'package:education_app/constants/color.dart';
+import 'package:ulearn/constants/color.dart';
 import 'package:flutter/material.dart';
 
 class CircleButton extends StatelessWidget {

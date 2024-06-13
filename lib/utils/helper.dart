@@ -1,5 +1,5 @@
-import 'package:education_app/models/course.dart';
-import 'package:education_app/models/lesson.dart';
+import 'package:ulearn/models/course.dart';
+import 'package:ulearn/models/lesson.dart';
 
 void getCurrentCompletedLesson(String tag, int courseId) {
   int courseIndex = courses

@@ -1,4 +1,4 @@
-import 'package:education_app/utils/encrypt.dart';
+import 'package:ulearn/utils/encrypt.dart';
 
 class User {
   String email;

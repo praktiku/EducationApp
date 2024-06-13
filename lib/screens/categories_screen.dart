@@ -1,5 +1,5 @@
-import 'package:education_app/models/course.dart';
-import 'package:education_app/screens/details_screen.dart';
+import 'package:ulearn/models/course.dart';
+import 'package:ulearn/screens/details_screen.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesScreen extends StatefulWidget {

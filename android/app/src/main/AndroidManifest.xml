@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.education_app">
+    package="com.uib.ulearn">
     <uses-permission android:name="android.permission.INTERNET" /> 
    <application
         android:label="U Learn"

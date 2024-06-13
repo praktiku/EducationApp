@@ -1,7 +1,7 @@
-import 'package:education_app/constants/color.dart';
-import 'package:education_app/models/category.dart';
-import 'package:education_app/models/course.dart';
-import 'package:education_app/screens/details_screen.dart';
+import 'package:ulearn/constants/color.dart';
+import 'package:ulearn/models/category.dart';
+import 'package:ulearn/models/course.dart';
+import 'package:ulearn/screens/details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

@@ -1,10 +1,10 @@
-import 'package:education_app/constants/color.dart';
-import 'package:education_app/constants/icons.dart';
-import 'package:education_app/models/course.dart';
-import 'package:education_app/models/lesson.dart';
-import 'package:education_app/models/user.dart';
-import 'package:education_app/utils/helper.dart';
-import 'package:education_app/widgets/custom_video_player.dart';
+import 'package:ulearn/constants/color.dart';
+import 'package:ulearn/constants/icons.dart';
+import 'package:ulearn/models/course.dart';
+import 'package:ulearn/models/lesson.dart';
+import 'package:ulearn/models/user.dart';
+import 'package:ulearn/utils/helper.dart';
+import 'package:ulearn/widgets/custom_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
